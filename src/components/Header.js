@@ -40,8 +40,8 @@ function Header() {
             <img src={Logo} alt="logo" />
             <GoThreeBars className="text-[30px] cursor-pointer md:hidden" onClick={handleBarClick} />
         </div>
-        {barIsOpen && <nav className="mt-[30px] absolute w-full md:static md:m-0 z-10">
-            <ul
+        {barIsOpen && <div className="mt-[30px] absolute w-full md:static md:m-0 z-10">
+            <div
                 className="flex flex-col items-center py-[40px] px-[25px] bg-[#3b3054] text-white rounded-lg md:p-0 md:flex-row md:justify-between md:bg-transparent md:text-black">
                 <div className="pb-[30px] w-full border-b border-gray-500 md:flex md:border-hidden md:p-0 md:w-fit md:ml-[40px]">
                     <Link className="mb-[35px] md:my-0 md:mr-[30px] md:text-[#bfbfbf] md:hover:text-black" href="/">Features</Link>
@@ -52,8 +52,8 @@ function Header() {
                     <Link className="mb-[35px] md:m-0 md:text-[#bfbfbf] md:hover:text-black" href="/">Login</Link>
                     <Link href="/" className="py-[10px] bg-[#2acfcf] text-white rounded-full hover:cursor-pointer md:ml-[30px] md:px-[20px] md:py-[5px]">Sign Up</Link>
                 </div>
-            </ul>
-        </nav>}
+            </div>
+        </div>}
     </div>
 }
 

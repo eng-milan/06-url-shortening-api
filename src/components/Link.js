@@ -1,6 +1,6 @@
 
 function Link({ className, href, children, onClick }) {
-    return <li
+    return <div
         className={`font-bold text-center list-none ${className}`}
         onClick={e => {
             if (onClick) {
@@ -10,7 +10,7 @@ function Link({ className, href, children, onClick }) {
         <a href={href} className="font-bold" style={{ fontSize: "inherit" }}>
             {children}
         </a>
-    </li>
+    </div>
 }
 
 export default Link
